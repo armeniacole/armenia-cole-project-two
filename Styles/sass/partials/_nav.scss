@@ -1,0 +1,29 @@
+.main-nav ul {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+    // margin-right: 120px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+        a {
+            text-decoration: none;
+            padding: 5px 0;
+            margin: 0 30px;
+
+        }
+}
+
+ .main-nav a:hover {
+                border-bottom: 2px solid $blue;
+            }
+
+.hamburger {
+    display: none;
+}
+

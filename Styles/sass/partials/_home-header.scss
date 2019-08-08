@@ -1,0 +1,34 @@
+// Header Desktop
+
+header {
+    height: 80vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../under-the-sea-assets/header-image.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h1-main {
+    width: 420px;
+    position: relative;
+    bottom: 50px;
+
+}
+
+.header-flex img {
+    position: relative;
+    left: 100px;
+    top: 70px;
+}
+
+.header-flex {
+    display: flex;
+}
+
+// Under header
+
+.section-one {
+    background: $background;
+    // padding: 200px 0;
+}
