@@ -1,0 +1,60 @@
+.contact-header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../under-the-sea-assets/contact-header.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    h1 {
+        padding-bottom: 200px;
+    }
+}
+
+.contact-main {
+    background: $background;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form {
+    position: relative;
+    bottom: 200px;
+    right: 50px;
+    width: 840px;
+    height: 475px;
+    box-shadow: -40px 40px 0 $blue;
+
+}
+
+.social {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        color: white;
+    }
+}
+
+
+
+.addresses { 
+    width: 250px;
+
+    .no-wrap {
+        white-space: pre-line;
+
+        .one-line {
+            white-space: nowrap;
+        }
+    }   
+
+    h3 {
+        margin-bottom: 0;
+    }
+
+
+}
+

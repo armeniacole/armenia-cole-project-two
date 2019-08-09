@@ -40,7 +40,7 @@
                 </div>
             </article>
     
-            <section>
+            <section class="comments-plus-form">
                 <div class="comments wrapper">
                 
                     <h3>Comments:</h3>
@@ -62,18 +62,20 @@
                     </div>
                 </div>
     
-                <form action="#">
+                <form class="comment-form" action="#">
     
-                    <label for="name">Enter your name.</label>
-                    <input type="text" name="name" id="name" placeholder="Name">
+                    <fieldset class="form-info">
+                        <label class="visually-hidden" for="name">Enter your name.</label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+        
+                        <label class="visually-hidden" for="email">Enter your email.</label>
+                        <input type="email" name="email" id="email" placeholder="Email address">
+                    </fieldset>
     
-                    <label for="email">Enter your email.</label>
-                    <input type="email" name="email" id="email" placeholder="Email address">
-    
-                    <label for="comment">Enter your comment.</label>
-                    <input type="text" name="comment" id="comment" placeholder="Comment">
-    
-                    <label for="submit">Click to sumbit.</label>
+                    <label class="visually-hidden" for="comment">Enter your comment.</label>
+                    <textarea name="comment" id="comment" placeholder="Comment" cols="70" rows="8"></textarea>
+                
+                    <label class="visually-hidden" for="submit">Click to sumbit.</label>
                     <input type="submit" name="submit" value="Post Comment">
     
                 </form>

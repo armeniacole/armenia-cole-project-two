@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="contact-header">
         <nav class="main-nav">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -28,10 +28,10 @@
         <h1>Get in Touch</h1>
     </header>
 
-    <main>
+    <main class="contact-main">
 
-        <section class="wrapper info">
-            <ul class="social">
+        <section class="info">
+            <ul class=" wrapper social">
                 <li>
                     <a href="#" aria-label="Go to Under the Sea Facebook page.">
                         <i aria-hidden class="fab fa-facebook-f"></i>
@@ -49,36 +49,37 @@
                 </li>
                 <li>
                     <a href="#" aria-label="Call Under the Sea.">
-                  <i aria-hidden <i class="fas fa-phone"></i>></i>
+                  <i aria-hidden class="fas fa-phone"></i>
                 </a>
                 </li>
             </ul>
     
-            <div class="addresses">
+            <div class="wrapper addresses">
+                
                 <h3>info@email.com</h3>
 
-                <p>
-                    <span>123-456-7890</span>
-                    <span>123 Queen Street West, Unit 10</span>
-                    <span>Toronto, Ontario</span>
-                    <span>M5V25D</span>
-            
+                <p class="no-wrap">
+                    123-456-7890
+                    <span class="one-line">123 Queen Street West, Unit 10</span>
+                    Toronto, Ontario
+                    M5V2D5
                 </p>
             </div>
         </section>
 
-        <form action="#">
-            <label for="name">Enter your name.</label>
-                <input type="text" name="name" id="name" placeholder="Name">
+        <form class="contact-form" action="#">
 
-                <label for="email">Enter your email.</label>
-                <input type="email" name="email" id="email" placeholder="Email address">
+            <label class="visually-hidden" for="name">Enter your name.</label>
+            <input type="text" name="name" id="name" placeholder="Name">
 
-                <label for="comment">Enter your comment.</label>
-                <input type="text" name="comment" id="comment" placeholder="Comment">
+            <label class="visually-hidden" for="email">Enter your email.</label>
+            <input type="email" name="email" id="email" placeholder="Email address">
 
-                <label for="submit">Click to sumbit.</label>
-                <input type="submit" name="submit" value="Submit">
+            <label class="visually-hidden" for="message">Enter your comment.</label>
+            <textarea name="message" id="message" placeholder="Message" cols="70" rows="8"></textarea>
+
+            <label class="visually-hidden" for="submit">Click to sumbit.</label>
+            <input type="submit" name="submit" value="Submit">
         </form>
         
     </main>

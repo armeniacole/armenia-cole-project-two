@@ -1,6 +1,6 @@
 // Header
 
-header {
+.blog-header {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../under-the-sea-assets/blog-head.jpg);
     background-size: cover;
@@ -79,6 +79,7 @@ aside {
     position: relative;
     bottom: 200px;
     left: 40px;
+    padding-bottom: 300px;
 }
 
 .comment {

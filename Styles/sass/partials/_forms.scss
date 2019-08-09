@@ -1,0 +1,88 @@
+// comment form
+
+.comments-plus-form {
+    position: relative;
+}
+
+.comment-form {
+    position: absolute;
+    top: 350px;
+    left: 140px;
+}
+
+input[type=submit] {
+    border: none;
+    background: $green;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 273px;
+    margin: 30px 0;
+}
+
+// contact form
+
+input[type=submit] {
+    background: $background;
+}
+
+.contact-form {
+    background: $green;
+    padding: 40px 80px 20px;;
+}
+
+
+
+// general form
+
+::placeholder {
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+fieldset {
+    border: none;
+}
+input[type=text] {
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid $blue;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 310px;
+    margin-right: 50px;
+    margin-left: 0;
+    position: relative;
+    right: 15px;
+}
+
+input[type=email] {
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid $blue;
+    padding: 20px;
+    width: 310px;
+}
+
+textarea {
+    border: 2px solid $blue;
+    background: transparent;
+    color: white;
+    padding: 20px;
+}
+
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
