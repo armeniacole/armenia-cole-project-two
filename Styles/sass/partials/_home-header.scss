@@ -18,7 +18,7 @@ header {
 
 .header-flex img {
     position: relative;
-    left: 100px;
+    left: 95px;
     top: 70px;
 }
 
@@ -28,7 +28,11 @@ header {
 
 // Under header
 
-.section-one {
+.under-header {
     background: $background;
-    // padding: 200px 0;
+    padding: 150px;
+}
+
+.section-one {
+    text-align: center;
 }

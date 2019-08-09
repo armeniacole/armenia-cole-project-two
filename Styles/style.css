@@ -189,6 +189,18 @@ body {
   margin: 0 auto;
 }
 
+.more {
+  padding: 10px 20px;
+  background: #86e0f9;
+  color: #0c1423;
+}
+
+.read {
+  padding: 10px 20px;
+  background: #0c1423;
+  color: white;
+}
+
 html {
   font-size: 125%;
   color: white;
@@ -230,6 +242,19 @@ h3 {
   text-transform: uppercase;
 }
 
+.more, .read {
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6rem;
+}
+
 header {
   height: 80vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../under-the-sea-assets/header-image.jpg);
@@ -246,7 +271,7 @@ header {
 
 .header-flex img {
   position: relative;
-  left: 100px;
+  left: 95px;
   top: 70px;
 }
 
@@ -256,8 +281,13 @@ header {
   display: flex;
 }
 
-.section-one {
+.under-header {
   background: #0c1423;
+  padding: 150px;
+}
+
+.section-one {
+  text-align: center;
 }
 
 .main-nav ul {
@@ -296,4 +326,56 @@ header {
 
 .hamburger {
   display: none;
+}
+
+.green-one {
+  background: #0f614e;
+}
+
+.new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.new img {
+  width: 55%;
+  position: relative;
+  right: 96px;
+  bottom: 50px;
+  -webkit-box-shadow: 50px 50px 0 #86e0f9;
+          box-shadow: 50px 50px 0 #86e0f9;
+}
+
+.new-content, .meet-content {
+  width: 50%;
+  padding: 30px;
+}
+
+.meet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.meet img {
+  width: 60%;
+  position: relative;
+  right: -96px;
+  bottom: -50px;
+  -webkit-box-shadow: -50px 50px 0 #86e0f9;
+          box-shadow: -50px 50px 0 #86e0f9;
+}
+
+.meet-content {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.info-section {
+  background: #0c1423;
 }

@@ -1,0 +1,46 @@
+// Article Section
+
+.green-one {
+    background: $green;
+}
+
+.new {
+    display: flex;
+
+    img {
+        width: 55%;
+        position: relative;
+        right: 96px;
+        bottom: 50px;
+        box-shadow: 50px 50px 0 $blue;
+    }
+}
+
+.new-content, .meet-content {
+    width: 50%;
+    padding: 30px;
+}
+
+.meet {
+    display: flex;
+    flex-direction: row-reverse;
+
+    img {
+        width: 60%;
+        position: relative;
+        right: -96px;
+        bottom: -50px;
+        box-shadow: -50px 50px 0 $blue; 
+    }
+}
+
+.meet-content {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+// info section
+
+.info-section {
+    background: $background;
+}
