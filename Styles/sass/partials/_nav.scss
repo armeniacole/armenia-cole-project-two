@@ -15,13 +15,21 @@
             text-decoration: none;
             padding: 5px 0;
             margin: 0 30px;
+            border-bottom: 2px solid transparent;
 
-        }
+            &:hover {
+            border-bottom: 2px solid $blue;
+            }
+
+        } 
+        
 }
 
- .main-nav a:hover {
-                border-bottom: 2px solid $blue;
-            }
+
+// a:hover {
+//     border-bottom: 2px solid $blue;
+// }
+
 
 .hamburger {
     display: none;

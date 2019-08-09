@@ -21,6 +21,11 @@ body {
     padding: 10px 20px;
     background: $blue;
     color: $background;
+    border-bottom: 5px solid transparent;
+
+    &:hover {
+      border-bottom: 5px solid $green;
+    }
     
 }
 
@@ -28,4 +33,9 @@ body {
     padding: 10px 20px;
     background: $background;
     color: white;
+    border-bottom: 5px solid transparent;
+
+    &:hover {
+      border-bottom: 5px solid $blue;
+    }
 }

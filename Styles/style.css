@@ -193,12 +193,22 @@ body {
   padding: 10px 20px;
   background: #86e0f9;
   color: #0c1423;
+  border-bottom: 5px solid transparent;
+}
+
+.more:hover {
+  border-bottom: 5px solid #0f614e;
 }
 
 .read {
   padding: 10px 20px;
   background: #0c1423;
   color: white;
+  border-bottom: 5px solid transparent;
+}
+
+.read:hover {
+  border-bottom: 5px solid #86e0f9;
 }
 
 html {
@@ -325,9 +335,10 @@ p {
   text-decoration: none;
   padding: 5px 0;
   margin: 0 30px;
+  border-bottom: 2px solid transparent;
 }
 
-.main-nav a:hover {
+.main-nav ul a:hover {
   border-bottom: 2px solid #86e0f9;
 }
 
@@ -401,10 +412,13 @@ p {
 }
 
 .locations i, .community i, .blog-mainp i, .contact-mainp i {
+  text-align: center;
   color: #0c1423;
   background: #86e0f9;
   padding: 12px;
   font-size: 1.3rem;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-right: 5px;
 }
@@ -599,10 +613,16 @@ input[type=submit] {
   text-transform: uppercase;
   padding: 10px 273px;
   margin: 30px 0;
+  border-bottom: 3px solid transparent;
 }
 
-input[type=submit] {
+input[type=submit]:hover {
+  border-bottom: 3px solid #86e0f9;
+}
+
+.contact-form input[type=submit] {
   background: #0c1423;
+  padding: 10px 310px;
 }
 
 .contact-form {
@@ -717,17 +737,14 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.social li {
+  padding: 15px;
 }
 
 .social a {
   color: white;
-}
-
-.addresses {
-  width: 250px;
 }
 
 .addresses .no-wrap {

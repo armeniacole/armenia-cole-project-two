@@ -18,12 +18,18 @@ input[type=submit] {
     text-transform: uppercase;
     padding: 10px 273px;
     margin: 30px 0;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+        border-bottom: 3px solid $blue;
+    }
 }
 
 // contact form
 
-input[type=submit] {
+.contact-form input[type=submit] {
     background: $background;
+    padding: 10px 310px;
 }
 
 .contact-form {

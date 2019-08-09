@@ -31,8 +31,10 @@
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: space-between;
 
+    li {
+        padding: 15px;
+    }
     a {
         color: white;
     }
@@ -41,7 +43,7 @@
 
 
 .addresses { 
-    width: 250px;
+    // width: 250px;
 
     .no-wrap {
         white-space: pre-line;
