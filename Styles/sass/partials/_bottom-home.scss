@@ -1,0 +1,67 @@
+// this month
+
+
+.banner {
+    height: 400px;
+    background-image: url(../under-the-sea-assets/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.month {
+    background: $background;
+    padding: 70px 0 90px;
+
+    img {
+        width: 25%;
+        height: 25%;
+        box-shadow: 25px 25px 0 $blue;
+    }
+
+    .month-content {
+        width: 75%;
+        margin-left: 80px;
+
+        h2 {
+            margin: 0;
+        }
+
+        p {
+            padding-bottom: 25px;
+        }
+    }
+}
+
+.this-month {
+    display: flex;
+}
+
+// Gallery
+
+.last-section {
+    background: $green;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+
+    :nth-child(2) {
+        padding: 0 30px;
+    }
+}
+
+// footer
+
+footer {
+    background: $blue;
+    color: $background;
+    text-align: center;
+
+    p {
+        margin: 0;
+        padding: 5px 0;
+    }
+}
+

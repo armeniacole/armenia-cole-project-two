@@ -1,0 +1,99 @@
+// Header
+
+header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../under-the-sea-assets/blog-head.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 62vh;
+
+}
+
+.blog-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: $background;
+}
+
+.main-blog {
+    width: 80%
+}
+
+.blog-post {
+
+    img {
+        width: 735px;
+        position: relative;
+        bottom: 200px;
+        left: 160px;
+        box-shadow: -40px 40px 0 $blue;
+    }
+
+    .article-content {
+        padding: 0 40px;
+        border-left: 3px solid $blue;
+        border-bottom: 3px solid $blue;
+        width: 700px;
+        position: relative;
+        bottom: 200px;
+        left: 22px;
+
+        h2  {
+            margin: 0;
+            padding: 80px 0 0;
+        }
+
+        p:first-of-type {
+            padding-bottom: 40px;
+        
+        }
+    }
+}
+
+
+aside {
+    width: 30%;
+
+    img {
+        width: 400px;
+        position: relative;
+        top: 80px;
+        z-index: 10;
+    }
+}
+
+.info-group {
+    background: $green;
+    padding: 300px 20px 30px;
+    position: relative;
+    left: 50px;
+    bottom: 235px;
+}
+
+// comments
+
+
+.comments {
+    position: relative;
+    bottom: 200px;
+    left: 40px;
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 100px;
+        height: 100px;
+        margin: 30px;
+    }
+
+    .paragraph {
+        padding: 20px;
+        width: 500px;
+
+    }
+}

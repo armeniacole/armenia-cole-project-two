@@ -44,3 +44,26 @@
 .info-section {
     background: $background;
 }
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 120px 0 90px;
+}
+
+.locations, .community, .blog-mainp, .contact-mainp {
+    width: 50%;
+
+    i {
+        color: $background;
+        background: $blue;
+        padding: 12px;
+        font-size: 1.3rem;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+    p {
+        padding: 0 20px 0 70px;
+    }
+}
