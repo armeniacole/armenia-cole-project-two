@@ -805,6 +805,16 @@ aside img {
   width: 500px;
 }
 
+.comments-plus-form {
+  position: relative;
+}
+
+.comment-form {
+  position: absolute;
+  top: 350px;
+  left: 140px;
+}
+
 @media (max-width: 900px) {
   .blog-flex {
     display: block;
@@ -825,11 +835,7 @@ aside img {
   .comments {
     bottom: 100px;
     left: 60px;
-    padding-bottom: 300px;
-  }
-  aside {
-    width: 80%;
-    margin: 0 auto;
+    padding-bottom: 400px;
   }
   aside img {
     display: block;
@@ -845,41 +851,24 @@ aside img {
     left: 100px;
     bottom: 300px;
   }
+  .comment-form {
+    top: 550px;
+  }
 }
 
-.comments-plus-form {
-  position: relative;
-}
-
-.comment-form {
-  position: absolute;
-  top: 350px;
-  left: 140px;
-}
-
-input[type=submit] {
-  border: none;
-  background: #0f614e;
-  color: white;
-  font-family: 'Barlow', sans-serif;
-  text-transform: uppercase;
-  padding: 10px 273px;
-  margin: 30px 0;
-  border-bottom: 3px solid transparent;
-}
-
-input[type=submit]:hover {
-  border-bottom: 3px solid #86e0f9;
-}
-
-.contact-form input[type=submit] {
-  background: #0c1423;
-  padding: 10px 310px;
-}
-
-.contact-form {
-  background: #0f614e;
-  padding: 40px 80px 20px;
+@media (max-width: 768px) {
+  .blog-flex {
+    width: 100%;
+  }
+  .blog-post {
+    width: 100%;
+  }
+  .blog-post img {
+    position: static;
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 ::-webkit-input-placeholder {
@@ -950,6 +939,42 @@ textarea {
   overflow: hidden;
 }
 
+input[type=submit] {
+  border: none;
+  background: #0f614e;
+  color: white;
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+  padding: 10px 273px;
+  margin: 30px 0;
+  border-bottom: 3px solid transparent;
+}
+
+input[type=submit]:hover {
+  border-bottom: 3px solid #86e0f9;
+}
+
+.contact-form input[type=submit] {
+  background: #0c1423;
+  padding: 10px 310px;
+}
+
+.contact-form input[type=text] {
+  margin-right: 32px;
+  margin-left: 20px;
+}
+
+.contact-form {
+  background: #0f614e;
+  padding: 40px 80px 20px;
+}
+
+@media (max-width: 900px) {
+  input[type=text] {
+    margin-right: 32px;
+  }
+}
+
 .contact-header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../under-the-sea-assets/contact-header.jpg);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../under-the-sea-assets/contact-header.jpg);
@@ -975,7 +1000,7 @@ textarea {
 
 .contact-form {
   position: relative;
-  bottom: 200px;
+  bottom: 150px;
   right: 50px;
   width: 840px;
   height: 475px;
@@ -1009,4 +1034,36 @@ textarea {
 
 .addresses h3 {
   margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .contact-main {
+    display: block;
+  }
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: 40%;
+    padding: 50px 0;
+  }
+  .social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 10%;
+  }
+  .addresses {
+    width: 80%;
+  }
+  .addresses h3 {
+    margin-top: 10px;
+  }
+  .contact-form {
+    position: static;
+    width: 700px;
+    margin: 0 auto;
+  }
 }

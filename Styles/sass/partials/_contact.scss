@@ -19,7 +19,7 @@
 
 .contact-form {
     position: relative;
-    bottom: 200px;
+    bottom: 150px;
     right: 50px;
     width: 840px;
     height: 475px;
@@ -58,5 +58,37 @@
     }
 
 
+}
+
+@media (max-width: 900px) {
+
+    .contact-main {
+        display: block;
+    }
+
+    .info {
+        display: flex;
+        margin: 0 auto;
+        width: 40%;
+        padding: 50px 0;
+    }
+    .social {
+        flex-direction: column;
+        width: 10%;
+    }
+
+    .addresses {
+        width: 80%;
+
+        h3 {
+            margin-top: 10px;
+        }
+    }
+
+    .contact-form {
+        position: static;
+        width: 700px;
+        margin: 0 auto;
+    }
 }
 

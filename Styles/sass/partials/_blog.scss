@@ -99,6 +99,18 @@ aside {
     }
 }
 
+// form positioning
+
+.comments-plus-form {
+    position: relative;
+}
+
+.comment-form {
+    position: absolute;
+    top: 350px;
+    left: 140px;
+}
+
 @media (max-width: 900px) {
 
     .blog-flex {
@@ -107,8 +119,8 @@ aside {
     }
 
     .main-blog {
-    width: 80%
-}
+        width: 80%
+    }
 
     .blog-post {
 
@@ -127,12 +139,12 @@ aside {
     .comments {
         bottom: 100px;
         left: 60px;
-        padding-bottom: 300px;
+        padding-bottom: 400px;
     }
 
     aside {
-        width: 80%;
-        margin: 0 auto;
+        // width: 80%;
+        // margin: 0;
 
         img {
             display: block;
@@ -151,4 +163,28 @@ aside {
         bottom: 300px;
     }
 
+    .comment-form {
+        top: 550px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .blog-flex {
+        width: 100%;
+    }
+
+    .blog-post {
+        width: 100%;
+
+        img {
+            position: static;
+            width: 500px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    
 }
