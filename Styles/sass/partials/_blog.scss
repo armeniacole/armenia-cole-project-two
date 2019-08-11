@@ -26,7 +26,7 @@
     img {
         width: 735px;
         position: relative;
-        bottom: 200px;
+        bottom: 170px;
         left: 160px;
         box-shadow: -40px 40px 0 $blue;
     }
@@ -97,4 +97,58 @@ aside {
         width: 500px;
 
     }
+}
+
+@media (max-width: 900px) {
+
+    .blog-flex {
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .main-blog {
+    width: 80%
+}
+
+    .blog-post {
+
+        img {
+            bottom: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .article-content {
+            bottom: 100px;
+            left: 110px;
+        }
+    }
+
+    .comments {
+        bottom: 100px;
+        left: 60px;
+        padding-bottom: 300px;
+    }
+
+    aside {
+        width: 80%;
+        margin: 0 auto;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            top: 0;
+        }
+    }
+
+    .info-group {
+        padding: 300px 20px 30px;
+        position: relative;
+        width: 500px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        left: 100px;
+        bottom: 300px;
+    }
+
 }
