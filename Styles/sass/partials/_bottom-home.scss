@@ -65,3 +65,84 @@ footer {
     }
 }
 
+@media (max-width: 900px) {
+    .this-month {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .banner {
+        height: 200px;
+    }
+
+    .this-month {
+        display: block;
+    }
+
+    .month {
+
+        img {
+            width: 70%;
+            height: 70%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .month-content {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+
+            h2 {
+                margin: 0;
+                padding-top: 40px;
+            }
+
+            p {
+                padding-bottom: 25px;
+            }
+        }
+    }
+
+    .gallery {
+        padding: 50px 0;
+    
+
+        :nth-child(2) {
+            display: none;
+        }
+
+    .gallery img {
+        margin: 0 10px;
+
+    }
+}
+
+
+}
+
+@media (max-width: 320px) {
+    .gallery {
+        display: block;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 250px;
+            height: 250px;
+        }
+
+        :first-child {
+            margin-bottom: 30px;
+        }
+    }
+}

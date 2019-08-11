@@ -71,3 +71,101 @@
         padding: 0 20px 0 70px;
     }
 }
+
+@media (max-width: 900px) {
+    .new {
+    display: block;
+
+        img {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+            position: static;
+            box-shadow: 50px -50px 0 $blue;
+        }
+
+    }
+
+    .new-content, .meet-content {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .meet {
+        display: block;
+
+        img {
+            width: 90%;
+            display: block;
+            margin: 0 auto;
+            position: static;
+        }
+    }
+
+    .meet-content {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .new img {
+        box-shadow: 40px -40px 0 $blue;
+    }
+
+    .meet img {
+        box-shadow: -40px 40px 0 $blue;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .new img {
+        box-shadow: 20px -20px 0 $blue;
+    }
+
+    .meet img {
+        box-shadow: -20px 20px 0 $blue;
+    }
+
+    .meet-content {
+        margin-top: 15px;
+    }
+
+    .info {
+    display: block;
+    padding: 0;
+    }
+
+    .locations, .community, .blog-mainp, .contact-mainp {
+        width: 90%;
+        margin: 0 auto;
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            padding: 0;
+        }
+    }
+
+    .locations h3 {
+            padding-top: 50px;
+            margin-top: 0;
+    }
+
+
+    .contact-mainp p {
+        padding-bottom: 50px;
+        margin-bottom: 0;
+    }
+}
+
+

@@ -282,14 +282,26 @@ p {
 
 .h1-main {
   width: 420px;
+  min-width: 100px;
   position: relative;
   bottom: 50px;
+}
+
+.header-img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  min-width: 0;
 }
 
 .header-flex img {
   position: relative;
   left: 95px;
-  top: 70px;
+  top: 45px;
+  width: 700px;
+  max-width: 100%;
+  max-height: 600px;
 }
 
 .header-flex {
@@ -305,6 +317,50 @@ p {
 
 .section-one {
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .h1-main {
+    font-size: 5.9rem;
+    line-height: 5.3rem;
+  }
+  .header-flex img {
+    left: 70px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .h1-main {
+    font-size: 4.9rem;
+    line-height: 4.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1-main {
+    width: 100px;
+    font-size: 2.9rem;
+    line-height: 2.3rem;
+  }
+  .header-flex {
+    display: block;
+  }
+  .header-flex img {
+    width: 350px;
+    left: 90px;
+    top: 0;
+  }
+  .under-header {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .h1-main {
+    font-size: 1.9rem;
+    line-height: 1.3rem;
+  }
 }
 
 .main-nav ul {
@@ -344,6 +400,17 @@ p {
 
 .hamburger {
   display: none;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .main-nav li:not(:last-child) {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    color: white;
+  }
 }
 
 .green-one {
@@ -427,6 +494,86 @@ p {
   padding: 0 20px 0 70px;
 }
 
+@media (max-width: 900px) {
+  .new {
+    display: block;
+  }
+  .new img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    position: static;
+    -webkit-box-shadow: 50px -50px 0 #86e0f9;
+            box-shadow: 50px -50px 0 #86e0f9;
+  }
+  .new-content, .meet-content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .meet {
+    display: block;
+  }
+  .meet img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    position: static;
+  }
+  .meet-content {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .new img {
+    -webkit-box-shadow: 40px -40px 0 #86e0f9;
+            box-shadow: 40px -40px 0 #86e0f9;
+  }
+  .meet img {
+    -webkit-box-shadow: -40px 40px 0 #86e0f9;
+            box-shadow: -40px 40px 0 #86e0f9;
+  }
+}
+
+@media (max-width: 480px) {
+  .new img {
+    -webkit-box-shadow: 20px -20px 0 #86e0f9;
+            box-shadow: 20px -20px 0 #86e0f9;
+  }
+  .meet img {
+    -webkit-box-shadow: -20px 20px 0 #86e0f9;
+            box-shadow: -20px 20px 0 #86e0f9;
+  }
+  .meet-content {
+    margin-top: 15px;
+  }
+  .info {
+    display: block;
+    padding: 0;
+  }
+  .locations, .community, .blog-mainp, .contact-mainp {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .locations h3, .community h3, .blog-mainp h3, .contact-mainp h3 {
+    text-align: center;
+  }
+  .locations p, .community p, .blog-mainp p, .contact-mainp p {
+    padding: 0;
+  }
+  .locations h3 {
+    padding-top: 50px;
+    margin-top: 0;
+  }
+  .contact-mainp p {
+    padding-bottom: 50px;
+    margin-bottom: 0;
+  }
+}
+
 .banner {
   height: 400px;
   background-image: url(../under-the-sea-assets/banner.jpg);
@@ -492,6 +639,69 @@ footer {
 footer p {
   margin: 0;
   padding: 5px 0;
+}
+
+@media (max-width: 900px) {
+  .this-month {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 200px;
+  }
+  .this-month {
+    display: block;
+  }
+  .month img {
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  .month .month-content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .month .month-content h2 {
+    margin: 0;
+    padding-top: 40px;
+  }
+  .month .month-content p {
+    padding-bottom: 25px;
+  }
+  .gallery {
+    padding: 50px 0;
+  }
+  .gallery :nth-child(2) {
+    display: none;
+  }
+  .gallery .gallery img {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .gallery {
+    display: block;
+  }
+  .gallery img {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+  }
+  .gallery :first-child {
+    margin-bottom: 30px;
+  }
 }
 
 .blog-header {
