@@ -25,16 +25,46 @@
         
 }
 
-.hamburger {
+// for hamburger 
+
+input[type="checkbox"]{
+    opacity: 0;
+    position: absolute;
+ }
+
+
+.main-nav label {
+    font-size: 3.5rem;
     display: none;
-    font-size: 2.5rem;
-    
 }
+
 
 @media (max-width: 768px) {
 
-    .main-nav li:not(:last-child) {
+    .main-nav label {
+        display: block;
+        float: right;
+    }
+
+    .main-nav ul {
         display: none;
+    }
+
+    input[type=checkbox]:checked + ul {
+        display: block;
+        flex-direction: column;
+        background: $green;
+        z-index: 10;
+        width: 50%;
+        position: absolute;
+        left: 0;
+        top: 10;
+        
+    }
+    input[type=checkbox]:checked + ul li {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
     }
 
     .hamburger {
