@@ -64,13 +64,18 @@ textarea {
 
 // comment form
 
+.comment-form {
+    width: 80%;
+    margin: 0 auto;
+}
 input[type=submit] {
     border: none;
     background: $green;
     color: white;
+    padding: 10px 0;
+    width: 100%;
     font-family: 'Barlow', sans-serif;
     text-transform: uppercase;
-    padding: 10px 273px;
     margin: 30px 0;
     border-bottom: 3px solid transparent;
 
@@ -79,11 +84,16 @@ input[type=submit] {
     }
 }
 
+.comment-form input[type=submit] {
+    padding: 10px 0;
+    width: 100%;
+}
+
 // contact form
 
 .contact-form input[type=submit] {
     background: $background;
-    padding: 10px 45%;
+    // padding: 10px 45%;
 }
 
 .contact-form input[type=text] {
