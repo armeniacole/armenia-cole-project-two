@@ -200,6 +200,10 @@ body {
   border-bottom: 5px solid #0f614e;
 }
 
+.more:focus {
+  border-bottom: 5px solid #0f614e;
+}
+
 .read {
   padding: 10px 20px;
   background: #0c1423;
@@ -208,6 +212,10 @@ body {
 }
 
 .read:hover {
+  border-bottom: 5px solid #86e0f9;
+}
+
+.read:focus {
   border-bottom: 5px solid #86e0f9;
 }
 
@@ -411,6 +419,10 @@ input[type="checkbox"] {
 .main-nav label {
   font-size: 3.5rem;
   display: none;
+}
+
+.main-nav label:focus {
+  background: #0f614e;
 }
 
 @media (max-width: 768px) {
@@ -961,7 +973,14 @@ aside .image::before {
     font-size: 1.6rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    padding: 30px 0px;
+    margin: 30px 0px;
+    padding: 5px;
+  }
+  .comments-plus-form label:hover {
+    background: #0f614e;
+  }
+  .comments-plus-form label:focus {
+    background: #0f614e;
   }
   .comment-toggle {
     display: none;
@@ -1005,20 +1024,29 @@ aside .image::before {
 
 fieldset {
   border: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 input[type=text] {
   background: transparent;
   color: white;
   border: none;
+  border: 5px solid transparent;
   border-bottom: 2px solid #86e0f9;
   margin-bottom: 30px;
   padding: 20px;
-  width: 45%;
-  margin-right: 50px;
-  margin-left: 0;
-  position: relative;
-  right: 15px;
+  width: 47%;
+}
+
+input[type=text]:focus {
+  border: 5px solid #86e0f9;
 }
 
 input[type=email] {
@@ -1026,12 +1054,18 @@ input[type=email] {
   color: white;
   border: none;
   margin-bottom: 30px;
+  border: 5px solid transparent;
   border-bottom: 2px solid #86e0f9;
   padding: 20px;
-  width: 45%;
+  width: 47%;
+}
+
+input[type=email]:focus {
+  border: 5px solid #86e0f9;
 }
 
 textarea {
+  border: 5px solid transparent;
   border: 2px solid #86e0f9;
   background: transparent;
   color: white;
@@ -1039,6 +1073,10 @@ textarea {
   resize: none;
   width: 100%;
   height: 100%;
+}
+
+textarea:focus {
+  border: 5px solid #86e0f9;
 }
 
 .textarea-contain {
@@ -1081,6 +1119,10 @@ input[type=submit]:hover {
   border-bottom: 3px solid #86e0f9;
 }
 
+input[type=submit]:focus {
+  border-bottom: 3px solid #86e0f9;
+}
+
 .comment-form input[type=submit] {
   padding: 10px 0;
   width: 100%;
@@ -1088,11 +1130,6 @@ input[type=submit]:hover {
 
 .contact-form input[type=submit] {
   background: #0c1423;
-}
-
-.contact-form input[type=text] {
-  margin-right: 32px;
-  margin-left: 20px;
 }
 
 .contact-form {
@@ -1115,19 +1152,38 @@ input[type=submit]:hover {
   .contact-form input[type=submit] {
     padding: 10px 44%;
   }
+  .comment-form fieldset {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .comment-form fieldset input[type=text] {
+    width: 100%;
+  }
+  .comment-form fieldset input[type=email] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  fieldset {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  fieldset input[type=text] {
+    width: 100%;
+  }
+  fieldset input[type=email] {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
   .textarea-contain {
     width: 100%;
-  }
-  .contact-form input[type=text] {
-    margin-bottom: 30px;
-    width: 100%;
-  }
-  .contact-form input[type=email] {
-    width: 100%;
-    margin-bottom: 30px;
   }
   .contact-form input[type=submit] {
     padding: 10px 38%;

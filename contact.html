@@ -14,7 +14,7 @@
     <header class="contact-header">
          <nav class="main-nav wrapper clearfix">
 
-            <label for="hamburger">&#9776;<p class="visually-hidden">Toggle for Menu options.</p></label>
+            <label tabindex="0" for="hamburger">&#9776;<p class="visually-hidden">Toggle for Menu options.</p></label>
                     
             <input type="checkbox" name="hamburger" id="hamburger">
 
@@ -72,11 +72,13 @@
 
         <form class="contact-form" action="#">
 
-            <label class="visually-hidden" for="name">Enter your name.</label>
-            <input type="text" name="name" id="name" placeholder="Name">
+            <fieldset class="form-info">
+                <label class="visually-hidden" for="name">Enter your name.</label>
+                <input type="text" name="name" id="name" placeholder="Name">
 
-            <label class="visually-hidden" for="email">Enter your email.</label>
-            <input type="email" name="email" id="email" placeholder="Email address">
+                <label class="visually-hidden" for="email">Enter your email.</label>
+                <input type="email" name="email" id="email" placeholder="Email address">
+            </fieldset>
 
             <label class="visually-hidden" for="message">Enter your comment.</label>
             <div class="textarea-contain">

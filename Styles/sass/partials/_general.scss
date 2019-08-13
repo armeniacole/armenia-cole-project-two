@@ -26,6 +26,10 @@ body {
     &:hover {
       border-bottom: 5px solid $green;
     }
+
+    &:focus {
+      border-bottom: 5px solid $green;
+    }
     
 }
 
@@ -36,6 +40,10 @@ body {
     border-bottom: 5px solid transparent;
 
     &:hover {
+      border-bottom: 5px solid $blue;
+    }
+
+    &:focus {
       border-bottom: 5px solid $blue;
     }
 }

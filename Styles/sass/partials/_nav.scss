@@ -38,6 +38,10 @@ input[type="checkbox"] {
     display: none;
 }
 
+.main-nav label:focus {
+    background: $green;
+}
+
 
 @media (max-width: 768px) {
 
