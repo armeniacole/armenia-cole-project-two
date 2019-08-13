@@ -73,6 +73,11 @@
     }
 }
 
+.comment-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
 
 aside {
     width: 30%;
@@ -196,4 +201,56 @@ aside {
     .comment {
         flex-direction: column;
     }
+}
+
+
+@media (max-width: 320px) {
+
+    .main-blog{
+        width: 95%;
+    }
+    
+    .blog-post {
+
+        .article-content {
+            h2 {
+                font-size: 1.5rem;
+                padding-top: 20px;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+            p:first-of-type {
+                padding: 0;
+            }
+    }
+
+        img {
+            box-shadow: -15px 15px 0 $blue;
+        }
+        .article-content::before {
+            left: -15px;
+    }
+
+        .article-content::after {
+            left: -15px;
+        }
+    }
+
+    .comment-form {
+        width: 95%;
+    }
+
+    aside {
+        width: 90%;
+
+        h4 {
+            font-size: 1.1rem;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+
+   
 }

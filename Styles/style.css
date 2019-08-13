@@ -874,6 +874,11 @@ footer p {
   width: 100%;
 }
 
+.comment-form {
+  width: 80%;
+  margin: 0 auto;
+}
+
 aside {
   width: 30%;
   display: -webkit-box;
@@ -1002,6 +1007,44 @@ aside .image::before {
   }
 }
 
+@media (max-width: 320px) {
+  .main-blog {
+    width: 95%;
+  }
+  .blog-post .article-content h2 {
+    font-size: 1.5rem;
+    padding-top: 20px;
+  }
+  .blog-post .article-content p {
+    font-size: 0.8rem;
+  }
+  .blog-post .article-content p:first-of-type {
+    padding: 0;
+  }
+  .blog-post img {
+    -webkit-box-shadow: -15px 15px 0 #86e0f9;
+            box-shadow: -15px 15px 0 #86e0f9;
+  }
+  .blog-post .article-content::before {
+    left: -15px;
+  }
+  .blog-post .article-content::after {
+    left: -15px;
+  }
+  .comment-form {
+    width: 95%;
+  }
+  aside {
+    width: 90%;
+  }
+  aside h4 {
+    font-size: 1.1rem;
+  }
+  aside p {
+    font-size: 0.8rem;
+  }
+}
+
 ::-webkit-input-placeholder {
   color: white;
   font-family: 'Lato', sans-serif;
@@ -1038,7 +1081,6 @@ input[type=text] {
   background: transparent;
   color: white;
   border: none;
-  border: 5px solid transparent;
   border-bottom: 2px solid #86e0f9;
   margin-bottom: 30px;
   padding: 20px;
@@ -1054,7 +1096,6 @@ input[type=email] {
   color: white;
   border: none;
   margin-bottom: 30px;
-  border: 5px solid transparent;
   border-bottom: 2px solid #86e0f9;
   padding: 20px;
   width: 47%;
@@ -1096,11 +1137,6 @@ textarea:focus {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.comment-form {
-  width: 80%;
-  margin: 0 auto;
 }
 
 input[type=submit] {
@@ -1230,11 +1266,14 @@ input[type=submit]:focus {
 }
 
 .social {
-  padding: 0;
+  padding: 30px 0 0;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .social li {
@@ -1243,6 +1282,7 @@ input[type=submit]:focus {
 
 .social a {
   color: white;
+  font-size: 1.5rem;
 }
 
 .addresses .no-wrap {
@@ -1282,9 +1322,11 @@ input[type=submit]:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 10%;
+    padding: 0;
   }
   .addresses {
     width: 80%;
+    padding: 20px 10px 0 0;
   }
   .addresses h3 {
     margin-top: 10px;

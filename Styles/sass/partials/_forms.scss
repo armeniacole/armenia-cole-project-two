@@ -14,11 +14,13 @@ fieldset {
     justify-content: space-between;
 }
 
+// There are two commented out transparent borders here, I left them in to show that I tried to reduce the "jiggle" effect that my focus state gives. However as these items have a border bottom on them it changes the shape of the border if this is above the border, but removes the border when below. 
+
 input[type=text] {
     background: transparent;
     color: white;
     border: none;
-    border: 5px solid transparent;
+    // border: 5px solid transparent;
     border-bottom: 2px solid $blue;
     margin-bottom: 30px;
     padding: 20px;
@@ -35,7 +37,7 @@ input[type=email] {
     color: white;
     border: none;
     margin-bottom: 30px;
-    border: 5px solid transparent;
+    // border: 5px solid transparent;
     border-bottom: 2px solid $blue;
     padding: 20px;
     width: 47%;
@@ -84,10 +86,6 @@ textarea:focus {
 
 // comment form
 
-.comment-form {
-    width: 80%;
-    margin: 0 auto;
-}
 input[type=submit] {
     border: none;
     background: $green;
