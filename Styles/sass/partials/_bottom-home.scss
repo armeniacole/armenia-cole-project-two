@@ -131,6 +131,15 @@ footer {
 }
 
 @media (max-width: 320px) {
+
+    .banner {
+        height: 150px;
+    }
+
+    .month {
+        padding: 60px 0;
+        width: 100%;
+    }
     .gallery {
         display: block;
 

@@ -280,34 +280,27 @@ p {
   background-size: cover;
 }
 
-.h1-main {
-  width: 420px;
-  min-width: 100px;
-  position: relative;
-  bottom: 50px;
-}
-
-.header-img {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: auto;
-  min-width: 0;
-}
-
-.header-flex img {
-  position: relative;
-  left: 95px;
-  top: 45px;
-  width: 700px;
-  max-width: 100%;
-  max-height: 600px;
-}
-
 .header-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home-header img {
+  max-width: 50%;
+  height: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+  top: 50px;
+}
+
+.h1-main {
+  width: 50%;
+  white-space: pre-line;
+  margin: 5%;
 }
 
 .under-header {
@@ -323,10 +316,11 @@ p {
   .h1-main {
     font-size: 5.9rem;
     line-height: 5.3rem;
+    width: 30%;
   }
-  .header-flex img {
-    left: 70px;
-    width: 600px;
+  .home-header img {
+    top: 100px;
+    max-width: 70%;
   }
 }
 
@@ -335,21 +329,25 @@ p {
     font-size: 4.9rem;
     line-height: 4.3rem;
   }
+  .under-header {
+    padding: 60px 60px 100px;
+  }
 }
 
 @media (max-width: 480px) {
   .h1-main {
-    width: 100px;
     font-size: 2.9rem;
-    line-height: 2.3rem;
+    line-height: 3rem;
   }
   .header-flex {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .header-flex img {
-    width: 350px;
-    left: 90px;
-    top: 0;
+  .home-header img {
+    max-width: 80%;
+    top: -50px;
   }
   .under-header {
     padding: 60px 20px;
@@ -358,8 +356,15 @@ p {
 
 @media (max-width: 320px) {
   .h1-main {
-    font-size: 1.9rem;
-    line-height: 1.3rem;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+  .home-header img {
+    position: static;
+    width: 100%;
+  }
+  .under-header {
+    padding-top: 10px;
   }
 }
 
@@ -492,13 +497,14 @@ input[type="checkbox"] {
   background: #0c1423;
 }
 
-.info {
+.info-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 120px 0 90px;
+  width: 100%;
+  padding: 120px 50px 90px;
 }
 
 .locations, .community, .blog-mainp, .contact-mainp {
@@ -563,6 +569,22 @@ input[type="checkbox"] {
     -webkit-box-shadow: -40px 40px 0 #86e0f9;
             box-shadow: -40px 40px 0 #86e0f9;
   }
+  .info-main {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px;
+    width: 100%;
+  }
+  .locations, .community, .blog-mainp, .contact-mainp {
+    width: 100%;
+  }
+  .locations p, .community p, .blog-mainp p, .contact-mainp p {
+    padding: 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -577,13 +599,8 @@ input[type="checkbox"] {
   .meet-content {
     margin-top: 15px;
   }
-  .info {
-    display: block;
-    padding: 0;
-  }
   .locations, .community, .blog-mainp, .contact-mainp {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
   }
   .locations h3, .community h3, .blog-mainp h3, .contact-mainp h3 {
     text-align: center;
@@ -598,6 +615,37 @@ input[type="checkbox"] {
   .contact-mainp p {
     padding-bottom: 50px;
     margin-bottom: 0;
+  }
+  .new img {
+    width: 100%;
+  }
+  .new-content {
+    width: 100%;
+    padding: 10px 10px 50px;
+  }
+  .new-content h3 {
+    margin: 10px;
+  }
+  .meet img {
+    width: 100%;
+  }
+  .meet-content {
+    width: 100%;
+    padding: 10px 10px 30px;
+  }
+  .meet-content h3 {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .new img {
+    -webkit-box-shadow: 10px -10px 0 #86e0f9;
+            box-shadow: 10px -10px 0 #86e0f9;
+  }
+  .meet img {
+    -webkit-box-shadow: 10px -10px 0 #86e0f9;
+            box-shadow: 10px -10px 0 #86e0f9;
   }
 }
 
@@ -717,6 +765,13 @@ footer p {
 }
 
 @media (max-width: 320px) {
+  .banner {
+    height: 150px;
+  }
+  .month {
+    padding: 60px 0;
+    width: 100%;
+  }
   .gallery {
     display: block;
   }
