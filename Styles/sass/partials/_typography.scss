@@ -1,8 +1,10 @@
+// This partial contains typography styles for the whole site.
 html {
     font-size: 125%;
     color: white;
 }
 
+// index.html
 .h1-main {
     font-family: 'Barlow', sans-serif;
     font-size: 6.9rem;
@@ -10,6 +12,7 @@ html {
     text-transform: uppercase;
 }
 
+// Blog and Contact
 h1 {
     font-family: 'Barlow', sans-serif;
     font-size: 4rem;
@@ -17,6 +20,7 @@ h1 {
     text-transform: uppercase;
 }
 
+// Other headings
 h2 {
     font-family: 'Barlow', sans-serif;
     font-size: 2.1rem;
@@ -42,6 +46,7 @@ h4, {
 
 }
 
+// Nav Bar
 .main-nav a {
     font-family: 'Barlow', sans-serif;
     color: white;
@@ -50,6 +55,7 @@ h4, {
     text-transform: uppercase;
 }
 
+// Buttons
 .more, .read {
     font-family: 'Barlow', sans-serif;
     letter-spacing: 1px;
@@ -58,6 +64,7 @@ h4, {
     text-transform: uppercase;
 }
 
+// Content
 p {
     font-family: 'Lato', sans-serif;
     line-height: 1.6rem;

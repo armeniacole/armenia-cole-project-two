@@ -1,24 +1,30 @@
-// Article Section
+// This partial contains the middle two sections of the home page
 
+// Article Section
 .green-one {
     background: $green;
 }
 
+// Text styling
+.new-content, .meet-content {
+    width: 50%;
+    padding: 30px;
+    h3 {
+        margin: 10px;
+    }
+}
+// Image styling
 .new {
     display: flex;
 
     img {
         width: 55%;
+        display: block;
         position: relative;
         right: 96px;
         bottom: 50px;
         box-shadow: 50px 50px 0 $blue;
     }
-}
-
-.new-content, .meet-content {
-    width: 50%;
-    padding: 30px;
 }
 
 .meet {
@@ -33,18 +39,19 @@
         box-shadow: -50px 50px 0 $blue; 
     }
 }
-
+// only for the last article
 .meet-content {
     text-align: right;
     margin-bottom: 30px;
 }
 
-// info section
 
+// Info Section
 .info-section {
     background: $background;
 }
 
+// Info flex control
 .info-main {
     display: flex;
     flex-wrap: wrap;
@@ -52,6 +59,7 @@
     padding: 120px 50px 90px;
 }
 
+// Info Items
 .locations, .community, .blog-mainp, .contact-mainp {
     width: 50%;
 
@@ -73,8 +81,9 @@
     }
 }
 
+// 900px for large tablets and half screen desktop
 @media (max-width: 900px) {
-
+    // Early switch to a "tablet" style layout for better scaling
     .new {
     display: block;
 
@@ -83,6 +92,7 @@
             width: 90%;
             margin: 0 auto;
             position: static;
+            // Switch the box shadow as a design decision to create more unified layout. 
             box-shadow: 50px -50px 0 $blue;
         }
 
@@ -113,7 +123,7 @@
     }
 }
 
-
+// For Tablet
 @media (max-width: 768px) {
 
     .new img {
@@ -123,7 +133,7 @@
     .meet img {
         box-shadow: -40px 40px 0 $blue;
     }
-
+    // Two columns become one
     .info-main {
         flex-wrap: nowrap;
         flex-direction: column;
@@ -140,7 +150,7 @@
     } 
 
 }
-
+// For Phone
 @media (max-width: 480px) {
 
     .new img {
@@ -209,8 +219,9 @@
     }
 
 }
-
+// Small Phones
 @media (max-width: 320px) {
+    // reduce box shadow width
     .new {
         img {
             box-shadow: 10px -10px 0 $blue;

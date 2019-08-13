@@ -1,8 +1,9 @@
+// Main Navigation
+
 .main-nav ul {
     list-style: none;
     padding: 20px 0;
     margin: 0;
-    // margin-right: 120px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -25,7 +26,7 @@
         
 }
 
-// for hamburger 
+// For inactive Hamburger 
 
 input[type="checkbox"] {
     opacity: 0;
@@ -42,9 +43,11 @@ input[type="checkbox"] {
     background: $green;
 }
 
+// Activate Hamburger for Tablet and below 
 
 @media (max-width: 768px) {
 
+    // Hide Normal Navigation and Show Hamburger
     .main-nav label {
         display: block;
         float: right;
@@ -53,7 +56,7 @@ input[type="checkbox"] {
     .main-nav ul {
         display: none;
     }
-
+    // Until this is checked then Show Nav in new configuration
     input[type=checkbox]:checked + ul {
         display: block;
         flex-direction: column;

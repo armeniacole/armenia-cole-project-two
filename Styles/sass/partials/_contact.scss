@@ -1,3 +1,6 @@
+// This partial contains all styles for contact.html
+
+// Header
 .contact-header {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../under-the-sea-assets/contact-header.jpg);
@@ -11,12 +14,14 @@
     }
 }
 
+// Main content flex
 .contact-main {
     background: $background;
     display: flex;
     justify-content: space-between;
 }
 
+// Form
 .contact-form {
     position: relative;
     bottom: 150px;
@@ -24,9 +29,9 @@
     width: 65%;
     height: 475px;
     box-shadow: -40px 40px 0 $blue;
-
 }
 
+// Social Icons
 .social {
     padding: 30px 0 0;
     list-style: none;
@@ -42,8 +47,7 @@
     }
 }
 
-
-
+// Address Info
 .addresses { 
     // width: 250px;
 
@@ -58,12 +62,12 @@
     h3 {
         margin-bottom: 0;
     }
-
-
 }
 
+// 900px for large tablets and half screen desktop
 @media (max-width: 900px) {
 
+    // Header
     .contact-header {
         height: 40vh;
 
@@ -72,17 +76,20 @@
         }
     }
 
+    // Remove Flex for a centered layout
     .contact-main {
         display: block;
         padding-bottom: 80px;
     }
 
+    // Information Section
     .info {
         display: flex;
         margin: 0 auto;
         width: 50%;
         padding: 20px 0;
     }
+    // Design decision to use whitespace more effectively switch to column.
     .social {
         flex-direction: column;
         width: 10%;
@@ -97,17 +104,16 @@
             margin-top: 10px;
         }
     }
-
+    // Form
     .contact-form {
         position: static;
         width: 80%;
         margin: 0 auto 80px;
         height: 100%;
     }
-
-
 }
 
+// Tablet
 @media (max-width: 768px) {
     .contact-header {
         height: 35vh;
@@ -135,6 +141,7 @@
 
 }
 
+// Phone
 @media (max-width: 480px) {
     
     .info {
@@ -147,6 +154,7 @@
 
 }
 
+// Small Phone
 @media (max-width: 390px) {
 
     .contact-form {

@@ -1,5 +1,6 @@
-// Header Desktop
+// This partial hold styles for top two areas of site home page
 
+// Header Desktop
 .home-header {
     height: 80vh;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -28,40 +29,8 @@
     white-space: pre-line;
     margin: 5%;
 }
-// .h1-main {
-//     width: 30%;
-//     min-width: 100px;
-//     position: relative;
-//     bottom: 50px;
 
-
-// }
-
-// .header-flex {
-//     display: flex;
-//     width: 80%;
-   
-// }
-
-// // .header-img {
-// //     align-items: center;
-// //     height: auto;
-// //     min-width: 0;
-// // }
-
-// .header-img {
-//     // position: relative;
-//     // left: 95px;
-//     // top: 45px;
-//     width: 40%;
-//     // max-width: 100%;
-//     max-height: 600px;
-//     align-self: flex-end;
-// }
-
-
-
-// Under header
+// About Section - Under header
 
 .under-header {
     background: $background;
@@ -72,7 +41,10 @@
     text-align: center;
 }
 
+// 900px for large tablets and half screen desktop
 @media (max-width: 900px) {
+
+    // Header scaling
 
     .h1-main {
         font-size: 5.9rem;
@@ -86,7 +58,10 @@
     }
 }
 
+//  For tablets 
 @media (max-width: 768px) {
+
+    // Header scaling
     .h1-main {
         font-size: 4.9rem;
         line-height: 4.3rem;
@@ -95,10 +70,12 @@
     .under-header {
         padding: 60px 60px 100px;
     }
-
 }
 
+// For Phones
 @media (max-width: 480px) {
+
+    // Header Scaling
     .h1-main {
         // width: 100px;
         font-size: 2.9rem;
@@ -113,16 +90,16 @@
         max-width: 80%;
         top: -50px;
     }
-
+    // Reduce padding for less whitespace
     .under-header {
         padding: 60px 20px;
     }
-
-
 }
 
+// Small Phones
 @media (max-width: 320px) {
 
+    // Header Scaling
     .h1-main {
         font-size: 2.2rem;
         line-height: 2.5rem;
@@ -134,11 +111,9 @@
 
     }
 
+    // Padding to clear header img
     .under-header {
         padding-top: 10px;
     }
-    
-    
-
 }
 

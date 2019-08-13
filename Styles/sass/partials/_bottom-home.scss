@@ -1,13 +1,13 @@
-// this month
+// This partial contains the styles for the bottom of home page
 
-
+// Banner image
 .banner {
     height: 400px;
     background-image: url(../under-the-sea-assets/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+// This Month Section
 .month {
     background: $background;
     padding: 70px 0 90px;
@@ -37,7 +37,6 @@
 }
 
 // Gallery
-
 .last-section {
     background: $green;
 }
@@ -52,32 +51,21 @@
     }
 }
 
-// footer
-
-footer {
-    background: $blue;
-    color: $background;
-    text-align: center;
-
-    p {
-        margin: 0;
-        padding: 5px 0;
-    }
-}
-
+// 900px for large tablets and half screen desktop
 @media (max-width: 900px) {
     .this-month {
         margin: 0 auto;
     }
 }
 
+// Tablets 
 @media (max-width: 768px) {
     .banner {
         height: 300px;
     }
 }
 
-
+// Phones
 @media (max-width: 480px) {
 
     .banner {
@@ -124,12 +112,11 @@ footer {
     .gallery img {
         margin: 0 10px;
 
+        }
     }
-}
-
 
 }
-
+// Small Phones
 @media (max-width: 320px) {
 
     .banner {

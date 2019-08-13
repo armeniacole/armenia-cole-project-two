@@ -1,5 +1,6 @@
-// Header
+// This partial contains all styles for Blog.html
 
+// Header
 .blog-header {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../under-the-sea-assets/blog-head.jpg);
@@ -10,6 +11,7 @@
 
 }
 
+// Main Content Flex
 .blog-flex {
     display: flex;
     flex-direction: row-reverse;
@@ -17,6 +19,7 @@
     background: $background;
 }
 
+// Blog Post Styles
 .main-blog {
     width: 60%;
     position: relative;
@@ -35,8 +38,6 @@
 
     .article-content {
         padding: 0 40px 20px 0;
-        // border-left: 3px solid $blue;
-        // border-bottom: 3px solid $blue;
         width: 100%;
         margin: 0 auto;
         position: relative;
@@ -78,7 +79,7 @@
     margin: 0 auto;
 }
 
-
+// Aside Styles
 aside {
     width: 30%;
     display: flex;
@@ -114,8 +115,9 @@ aside {
     left: 30px;
 }
 
-// comments
+// Comment Styles
 
+// This label is for comments toggle for smaller screens
 .comments-plus-form label {
     display: none;
 }
@@ -140,12 +142,14 @@ aside {
     }
 }
 
+// 900px for large tablets and half screen desktop
 @media (max-width: 900px) {
     .info-group {
         width: 95%;
     }
 }
 
+// For Tablet
 @media (max-width: 768px) {
     .blog-flex {
         flex-direction: column;
@@ -164,6 +168,11 @@ aside {
     
     }
 
+    // For the tablet size and below I chose to add a toggle to hide the comments.
+    // This decision was made because I wanted the hierarchy to make sense and to improve user experience.
+    // As a user I would likely stop scrolling at the comments - preventing me from seeing valuable information.
+    // This also reduces the scrolling the user is forced to do as the page gets longer and narrow. 
+    // This works like a hamburger menu, showing and hiding the comment when checked.
     .comments-plus-form label {
         display: block;
         font-family: 'Barlow', sans-serif;
@@ -197,15 +206,18 @@ aside {
     
 }
 
+// Phones
 @media (max-width: 480px) {
+    // contain comments
     .comment {
         flex-direction: column;
     }
 }
 
-
+// Small Phones
 @media (max-width: 320px) {
 
+    // Resizing needed
     .main-blog{
         width: 95%;
     }
@@ -250,7 +262,5 @@ aside {
         p {
             font-size: 0.8rem;
         }
-    }
-
-   
+    } 
 }

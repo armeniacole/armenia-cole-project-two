@@ -1,6 +1,6 @@
+// This partial contains the styling for both forms on the site.
 
-// general forms
-
+// general forms - applies to both
 ::placeholder {
     color: white;
     font-family: 'Lato', sans-serif;
@@ -82,10 +82,7 @@ textarea:focus {
     overflow: hidden;
 }
 
-
-
-// comment form
-
+// For only the Comment Form on blog.html
 input[type=submit] {
     border: none;
     background: $green;
@@ -111,8 +108,7 @@ input[type=submit] {
     width: 100%;
 }
 
-// contact form
-
+// For only the Form on contact.html
 .contact-form input[type=submit] {
     background: $background;
     // padding: 10px 45%;
@@ -123,7 +119,7 @@ input[type=submit] {
     padding: 40px 70px 20px;;
 }
 
-
+// 900px for large tablets and half screen desktop
 @media (max-width: 900px)   {
 
     // contact form
@@ -160,6 +156,7 @@ input[type=submit] {
 
 }
 
+// Tablets
 @media (max-width: 768px) {
 
     fieldset {
@@ -175,6 +172,7 @@ input[type=submit] {
     }
 }
 
+// Phones
 @media (max-width: 480px) {
 
     .textarea-contain {
@@ -187,6 +185,7 @@ input[type=submit] {
 
 }
 
+// Small Phones
 @media (max-width: 320px) {
 
      .contact-form input[type=submit] {
