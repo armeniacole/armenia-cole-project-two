@@ -19,8 +19,13 @@
             border-bottom: 2px solid transparent;
 
             &:hover {
-            border-bottom: 2px solid $blue;
+                border-bottom: 2px solid $blue;
             }
+
+            &:focus {
+                border: 2px solid $blue;
+            }
+
 
         }  
     }       
