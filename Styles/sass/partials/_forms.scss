@@ -25,11 +25,10 @@ input[type=text] {
     margin-bottom: 30px;
     padding: 20px;
     width: 47%;  
-    
-}
 
-input[type=text]:focus {
-    border: 5px solid $blue;
+    &:focus {
+        border: 5px solid $blue;
+    }
 }
 
 input[type=email] {
@@ -41,11 +40,10 @@ input[type=email] {
     border-bottom: 2px solid $blue;
     padding: 20px;
     width: 47%;
-    
-}
 
-input[type=email]:focus {
-    border: 5px solid $blue;
+    &:focus {
+        border: 5px solid $blue;
+    } 
 }
 
 textarea {
@@ -57,11 +55,10 @@ textarea {
     resize: none;
     width: 100%;
     height: 100%;
-}
 
-
-textarea:focus {
-    border: 5px solid $blue;
+    &:focus {
+        border: 5px solid $blue;
+    }
 }
 
 .textarea-contain {
@@ -69,20 +66,6 @@ textarea:focus {
     height: 200px;
 }
 
-.visually-hidden:not(:focus):not(:active) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-// For only the Comment Form on blog.html
 input[type=submit] {
     border: none;
     background: $green;
@@ -103,6 +86,20 @@ input[type=submit] {
     }
 }
 
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+// For only the Comment Form on blog.html
 .comment-form input[type=submit] {
     padding: 10px 0;
     width: 100%;
@@ -111,7 +108,6 @@ input[type=submit] {
 // For only the Form on contact.html
 .contact-form input[type=submit] {
     background: $background;
-    // padding: 10px 45%;
 }
 
 .contact-form {
@@ -123,74 +119,16 @@ input[type=submit] {
 @media (max-width: 900px)   {
 
     // contact form
-
-    input[type=text] {
-        margin-right: 32px;
-        width: 100%;
-    }
-
-    input[type=email] {
-        width: 100%;
-    }
-
     .textarea-contain {
         width: 100%;
         height: 150px;
     }
 
-    .contact-form input[type=submit] {
-        padding: 10px 44%;
-    }
-
-    .comment-form fieldset {
-        flex-direction: column;
-
-        input[type=text] {
-            width: 100%;
-        }
-
-        input[type=email] {
-            width: 100%;
-        }
-    }
-
-}
-
-// Tablets
-@media (max-width: 768px) {
-
     fieldset {
         flex-direction: column;
 
-        input[type=text] {
-            width: 100%;
-        }
-
-        input[type=email] {
+        input[type=text], input[type=email] {
             width: 100%;
         }
     }
-}
-
-// Phones
-@media (max-width: 480px) {
-
-    .textarea-contain {
-        width: 100%;
-    }
-
-    .contact-form input[type=submit] {
-    padding: 10px 38%;  
-    }
-
-}
-
-// Small Phones
-@media (max-width: 320px) {
-
-     .contact-form input[type=submit] {
-        padding: 10px 35%;  
-    }
-
-
 }

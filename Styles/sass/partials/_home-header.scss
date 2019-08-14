@@ -5,23 +5,22 @@
     height: 80vh;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../under-the-sea-assets/header-image.jpg);
-    
     background-repeat: no-repeat;
     background-size: cover;
+
+    img {
+        max-width: 50%;
+        height: auto;
+        align-self: flex-end;
+        position: relative;
+        top: 50px;
+    }
 }
 
 .header-flex {
     display: flex;
     width: 100%;
     margin: 0 auto;
-}
-
-.home-header img {
-    max-width: 50%;
-    height: auto;
-    align-self: flex-end;
-    position: relative;
-    top: 50px;
 }
 
 .h1-main {
@@ -77,7 +76,6 @@
 
     // Header Scaling
     .h1-main {
-        // width: 100px;
         font-size: 2.9rem;
         line-height: 3rem;
     }
@@ -108,7 +106,6 @@
     .home-header img {
         position: static;
         width: 100%;
-
     }
 
     // Padding to clear header img

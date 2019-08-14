@@ -67,7 +67,6 @@
 
 // Phones
 @media (max-width: 480px) {
-
     .banner {
         height: 200px;
     }
@@ -109,8 +108,8 @@
             display: none;
         }
 
-    .gallery img {
-        margin: 0 10px;
+        .gallery img {
+            margin: 0 10px;
 
         }
     }
@@ -127,6 +126,7 @@
         padding: 60px 0;
         width: 100%;
     }
+    
     .gallery {
         display: block;
 

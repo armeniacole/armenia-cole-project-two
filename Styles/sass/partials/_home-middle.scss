@@ -9,10 +9,12 @@
 .new-content, .meet-content {
     width: 50%;
     padding: 30px;
+
     h3 {
         margin: 10px;
     }
 }
+
 // Image styling
 .new {
     display: flex;
@@ -39,6 +41,7 @@
         box-shadow: -50px 50px 0 $blue; 
     }
 }
+
 // only for the last article
 .meet-content {
     text-align: right;
@@ -84,6 +87,8 @@
 // 900px for large tablets and half screen desktop
 @media (max-width: 900px) {
     // Early switch to a "tablet" style layout for better scaling
+
+    // Images
     .new {
     display: block;
 
@@ -92,18 +97,10 @@
             width: 90%;
             margin: 0 auto;
             position: static;
-            // Switch the box shadow as a design decision to create more unified layout. 
+            // Switching the box shadow was a design decision to create more unified layout. 
             box-shadow: 50px -50px 0 $blue;
         }
-
     }
-
-    .new-content, .meet-content {
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
 
     .meet {
         display: block;
@@ -116,16 +113,21 @@
         }
     }
 
-    .meet-content {
+    // Text content
+    .new-content, .meet-content {
+        width: 90%;
+        margin: 0 auto;
         text-align: center;
+    }
+
+    .meet-content {
         margin-top: 50px;
-        margin-bottom: 0px;
     }
 }
 
 // For Tablet
 @media (max-width: 768px) {
-
+    // Box-shadow reduction
     .new img {
         box-shadow: 40px -40px 0 $blue;
     }
@@ -133,6 +135,7 @@
     .meet img {
         box-shadow: -40px 40px 0 $blue;
     }
+
     // Two columns become one
     .info-main {
         flex-wrap: nowrap;
@@ -142,8 +145,8 @@
     }
 
     .locations, .community, .blog-mainp, .contact-mainp {
-
         width: 100%;
+
         p {
             padding: 0;
         }
@@ -152,19 +155,38 @@
 }
 // For Phone
 @media (max-width: 480px) {
-
+    // Images
     .new img {
         box-shadow: 20px -20px 0 $blue;
+        width: 100%;
     }
 
     .meet img {
         box-shadow: -20px 20px 0 $blue;
+        width: 100%;
+    }
+
+    // Text Content
+    .new-content {
+        width: 100%;
+        padding: 10px 10px 50px;
+
+        h3 {
+            margin: 10px;
+        }
     }
 
     .meet-content {
+        width: 100%;
+        padding: 10px 10px 30px;
         margin-top: 15px;
+
+        h3 {
+            margin: 10px;
+        }
     }
 
+    // Info Section
     .locations, .community, .blog-mainp, .contact-mainp {
         width: 100%;
 
@@ -177,48 +199,19 @@
         }
     }
 
+    // top and bottom of section
     .locations h3 {
-            padding-top: 50px;
-            margin-top: 0;
+        padding-top: 50px;
+        margin-top: 0;
     }
-
 
     .contact-mainp p {
         padding-bottom: 50px;
         margin-bottom: 0;
     }
 
-    .new {
-        img {
-            width: 100%;
-        }
-    }
-
-    .new-content {
-        width: 100%;
-        padding: 10px 10px 50px;
-
-        h3 {
-            margin: 10px;
-        }
-    }
-
-    .meet {
-        img {
-            width: 100%;
-        }
-    }
-
-    .meet-content {
-        width: 100%;
-        padding: 10px 10px 30px;
-
-        h3 {
-            margin: 10px;
-        }
-    }
-
 }
+
 // Small Phones
 @media (max-width: 320px) {
     // reduce box shadow width
