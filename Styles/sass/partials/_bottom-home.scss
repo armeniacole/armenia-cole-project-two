@@ -109,7 +109,7 @@
         
         img {
             width: 48%;
-            height: auto;
+            object-fit: contain;
         }
 
         :nth-child(2) {
